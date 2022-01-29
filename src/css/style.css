@@ -186,7 +186,7 @@ header .menu li:last-child a{
   margin-right: 0;
 }
 header .menu li a:hover{
-	color:#7B61FF;
+	color:#00C9FF;
 	transition: 0.3s;
 }
 /*======================
@@ -446,11 +446,11 @@ footer .row_2 .footer_box p{
   color: #fff;
   font-size: 20px;
   font-weight: 400;
-  text-decoration: underline;
+  text-decoration: none;
   transition: 0.3s;
 }
 .footer_menu a:hover{
-  color:#7B61FF;
+  color:#00C9FF;
   transition: 0.3s; 
 }
 /*======================
