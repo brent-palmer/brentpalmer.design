@@ -186,7 +186,7 @@ header .menu li:last-child a{
   margin-right: 0;
 }
 header .menu li a:hover{
-	color:#00C9FF;
+	color:#7B61FF;
 	transition: 0.3s;
 }
 /*======================
@@ -283,6 +283,7 @@ header .menu li a:hover{
 }
 .portfoilo_area .box .img_area{
   position: relative;
+  display: block;
 }
 .portfoilo_area .box .img_area::before{
   position: absolute;
@@ -446,11 +447,11 @@ footer .row_2 .footer_box p{
   color: #fff;
   font-size: 20px;
   font-weight: 400;
-  text-decoration: none;
+  text-decoration: underline;
   transition: 0.3s;
 }
 .footer_menu a:hover{
-  color:#00C9FF;
+  color:#7B61FF;
   transition: 0.3s; 
 }
 /*======================
