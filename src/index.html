@@ -1,366 +1,1171 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- title -->
-    <title>Brent Palmer | Product design and digital strategy for SaaS companies</title>
-    <!-- favicon -->
-    <link href="img/favicon.svg" type="image/png" rel="icon">
-    <!-- all css link -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/helper.css" rel="stylesheet" type="text/css">
-    <link href="css/aos.css" rel="stylesheet" type="text/css"/>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/responsive.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript">
-      (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
-      for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
-      MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
-      
-      // Enabling the debug mode flag is useful during implementation,
-      // but it's recommended you remove it for production
-      mixpanel.init('8ba26a44c95cefbf39c6ec6740d89054', {debug: true}); 
-      mixpanel.track('Sign up');
-      </script>
+    <meta charset="UTF-8" />
+    <title>Brent Palmer - Home</title>
+    <meta
+      name="google-site-verification"
+      content="5feI6uiWc3UkwiSIEJ_fcT2yMIlwYDIa6W-wMPbGuLQ"
+    />
+    <meta
+      name="description"
+      content="Brent Palmer | Design Manager and Product Leader."
+    />
+    <!-- <meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no"> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <style>
+      [data-sr] {
+        visibility: hidden;
+      }
+    </style>
+    <link rel=apple-touch-icon sizes=57x57
+    href=assets/apple-touch-icon-57x57.png> <link rel=apple-touch-icon
+    sizes=60x60 href=assets/apple-touch-icon-60x60.png> <link
+    rel=apple-touch-icon sizes=72x72 href=assets/apple-touch-icon-72x72.png>
+    <link rel=apple-touch-icon sizes=76x76
+    href=assets/apple-touch-icon-76x76.png> <link rel=apple-touch-icon
+    sizes=114x114 href=assets/apple-touch-icon-114x114.png> <link
+    rel=apple-touch-icon sizes=120x120 href=assets/apple-touch-icon-120x120.png>
+    <link rel=apple-touch-icon sizes=144x144
+    href=assets/apple-touch-icon-144x144.png> <link rel=apple-touch-icon
+    sizes=152x152 href=assets/apple-touch-icon-152x152.png> <link
+    rel=apple-touch-icon sizes=180x180 href=assets/apple-touch-icon-180x180.png>
+    <link rel=icon type=image/png href=assets/favicon-32x32.png sizes=32x32>
+    <link rel=icon type=image/png href=assets/android-chrome-192x192.png
+    sizes=192x192> <link rel=icon type=image/png href=assets/favicon-96x96.png
+    sizes=96x96> <link rel=icon type=image/png href=assets/favicon-16x16.png
+    sizes=16x16> <link rel=manifest href=assets/manifest.json>
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name=msapplication-TileImage content=/mstile-144x144.png>
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:url" content="http://brentpalmer.design" />
+    <meta property="og:site_name" content="Brent Palmer | Product Design Leader." />
+    <meta property="og:title" content="Brent Palmer | Product Design Leader." />
+    <meta
+      property="og:description"
+      content="Software engineer specializing in empowering people through communication and technology."
+    />
+    <meta
+      property="og:image"
+      content="http://adamzhu.co/site_preview_image.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        font-family: 'Roboto Mono', monospace;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        transition: background-color 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63);
+        color: #212121;
+        scroll-behavior: smooth;
+      }
+      .print-show {
+        display: none;
+      }
+      nav {
+        transition: background-color 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63),
+          box-shadow 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63);
+      }
+      nav ul.main-nav li a {
+        background: transparent !important;
+        color: #212121;
+      }
+      nav ul.main-nav li {
+        background-color: transparent !important;
+        transition: border 0.15s ease-in-out;
+        border-bottom: 0.125rem solid transparent;
+      }
+      nav ul.main-nav li:hover {
+        border-bottom: 0.125rem solid #484848;
+      }
+      nav ul.main-nav li.active {
+        border-bottom: 0.125rem solid #212121;
+      }
+      nav ul.main-nav li.active:hover {
+        border-bottom: 0.125rem solid #212121;
+      }
+      nav ul.side-nav li.active {
+        padding: 0 2.25rem;
+        border-color: transparent;
+        background-color: transparent;
+      }
+      nav ul.side-nav li.active a {
+        display: inline-block;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        padding: 0.25rem 0.5rem 0.25rem 0;
+        border-bottom: 0.125rem solid #212121;
+      }
+      nav.unfixed {
+        box-shadow: none !important;
+      }
+      .nav-wrapper {
+        padding-left: 1rem;
+      }
+      .brand-logo {
+        padding-top: 6px !important;
+      }
+      .brand-logo img {
+        width: 2.25rem !important;
+        height: 2.25rem !important;
+      }
+      .main {
+        text-align: center;
+        padding: 0 2rem;
+        min-height: calc(100vh - 64px);
+      }
+      .main .lead {
+        padding-top: calc(2rem + 64px);
+      }
+      .main.resume {
+        padding-bottom: 4rem;
+      }
+      section {
+        width: 40%;
+        margin: auto;
+        text-align: left;
+      }
+      h1,
+      h2 {
+        font-size: 5.125rem;
+        font-weight: 700;
+        padding-bottom: 3rem;
+        border-bottom: 0.125rem solid #212121;
+        margin-bottom: 3.5rem;
+        text-align: left;
+      }
+      h2 {
+        text-align: right;
+      }
+      h3 {
+        font-size: 1.64rem;
+        line-height: 110%;
+        margin: 0.82rem 0 0.656rem 0;
+        text-align: left;
+      }
+      p {
+        margin: 1.68rem 0;
+        transition: color 0.15s ease-in-out;
+        text-align: left;
+      }
+      p a {
+        display: inline-block;
+        transition: color 0.15s ease-in-out;
+        color: #3f51b5;
+      }
+      p a:hover {
+        color: #002984;
+      }
+      p a:visited {
+        color: #6a0080;
+      }
+      strong {
+        display: block;
+        font-weight: bold !important;
+      }
+      span {
+        display: block;
+      }
+      .desc {
+        font-size: 12px;
+        margin-top: 4px;
+      }
+      .tech {
+        font-size: 12px;
+      }
+      .btn {
+        margin-top: 2rem;
+        background-color: #212121;
+      }
+      .btn:hover {
+        background-color: #484848;
+      }
+      #sidenav-overlay {
+        z-index: 996 !important;
+      }
+      body.home,
+      body.home nav {
+        background-color: #ff7961;
+      }
+      body.home .side-nav,
+      body.home .btn {
+        background-color: #f44336;
+      }
+      body.home .btn:hover {
+        background-color: #ba000d;
+      }
+      body.about,
+      body.about nav {
+        background-color: #fff350;
+      }
+      body.about .side-nav,
+      body.about .btn {
+        background-color: #ffc107;
+      }
+      body.about .btn:hover {
+        background-color: #c79100;
+      }
+      body.resume,
+      body.resume nav {
+        background-color: #6ec6ff;
+      }
+      body.resume .side-nav,
+      body.resume .btn {
+        background-color: #2196f3;
+      }
+      body.resume .btn:hover {
+        background-color: #0069c0;
+      }
+      body.contact,
+      body.contact nav {
+        background-color: #52c7b8;
+      }
+      body.contact .side-nav,
+      body.contact .btn {
+        background-color: #009688;
+      }
+      body.contact .btn:hover {
+        background-color: #00675b;
+      }
+      @media screen and (max-width: 600px) {
+        .main {
+          min-height: 100vh;
+        }
+        .main.home {
+          padding: 0 3rem 5rem 3rem;
+        }
+        .main.home .lead {
+          padding-top: 1rem;
+        }
+        section {
+          width: auto;
+        }
+      }
+      @media screen and (max-width: 374px) {
+        h1,
+        h2 {
+          font-size: 4.5rem;
+        }
+      }
+      @media print {
+        .print-show {
+          display: block;
+        }
+        .navbar-fixed,
+        nav,
+        .btn {
+          display: none;
+          height: 0;
+        }
+        body {
+          background: none !important;
+          height: auto !important;
+          color: #000 !important;
+        }
+        .main {
+          min-height: auto !important;
+          height: auto;
+          padding: 0 !important;
+          margin-bottom: 2rem !important;
+        }
+        .main .lead {
+          margin-top: 0 !important;
+          padding-top: 0 !important;
+        }
+        section {
+          width: 100% !important;
+          padding: 0 !important;
+          margin: 0 !important;
+          text-align: left !important;
+        }
+        section.education {
+          page-break-after: always;
+        }
+        h1,
+        h2 {
+          margin: 0 0 2rem 0 !important;
+          padding: 1rem 1rem 2rem 1rem !important;
+          font-size: 3rem !important;
+          border: none;
+          color: #fff;
+        }
+        a {
+          color: #000 !important;
+        }
+        p,
+        a,
+        span {
+          font-size: 0.8rem;
+        }
+        h3,
+        p {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+        .home h1 {
+          background-color: #f44336;
+        }
+        .about h2 {
+          background-color: #ffc107;
+        }
+        .resume h2 {
+          background-color: #2196f3;
+        }
+        .resume h3 {
+          color: #2196f3;
+        }
+        .contact h2 {
+          background-color: #009688;
+        }
+        .pagebreak {
+          page-break-after: always;
+        }
+      }
+    </style>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"
+    ></script>
   </head>
-  <body>
-    <!-- start preloader -->
-    <div class="preloader">
-      <img class="lazy-load" src="img/preloader.svg" alt="img"/>
+  <body class="home">
+    <div class="navbar-fixed">
+      <nav class="unfixed">
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo">
+            <img src="assets/cheese.png" />
+          </a>
+          <ul id="nav-mobile" class="right main-nav hide-on-med-and-down">
+            <li class="home active"><a href="#home">Home</a></li>
+            <li class="about"><a href="#about">About</a></li>
+            <li class="resume"><a href="#resume">Resume</a></li>
+            <li class="contact"><a href="#contact">Contact</a></li>
+          </ul>
+          <a href="#" data-activates="mobile-demo" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="side-nav" id="mobile-demo">
+            <li class="home active"><a href="#home">Home</a></li>
+            <li class="about"><a href="#about">About</a></li>
+            <li class="resume"><a href="#resume">Resume</a></li>
+            <li class="contact"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <!-- end preloader -->
-    <!-- start header -->
-    <header class="d-flex align-items-center">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-3">
-            <!-- start logo -->
-            <div class="logo_area">
-              <a href="index.html">
-              <img src="img/logo.svg" alt="brent-palmer-design">
-              </a>
-            </div>
-          </div>
-          <div class="col-9">
-            <ul class="menu text-right">
-              <li>
-                <a href="about.html">About</a>
-              </li>
-              <li>
-                <a href="mailto:brntpalmer@gmail.com?subject=Hello there">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- end header -->
-    <main>
-      <!-- start hero area -->
-      <div class="hero_video_area d-flex align-items-center">
-        <div class="container position-relative">
-          <div class="row">
-            <div class="col-md-12 mt_30">
-              <h2  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">Product design & digital strategy<br> for SaaS companies</h2>
-              <div class="video_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Gz-PKToB_Ds?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end hero area -->
-      <!-- start sponsar area -->
-      <div class="sponsar_area" data-aos="fade-up" data-aos-duration="700">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-11">
-              <ul class="sponsars-1">
-                <li>
-                  <img src="img/instacart.svg" alt="img">
-                </li>
-                <li>
-                  <img src="img/Dell.svg" alt="img">
-                </li>
-                <li>
-                  <img src="img/tango.svg" alt="img">
-                </li>
-                <li>
-                  <img src="img/awning.svg" alt="img">
-                </li>
-              </ul>
-              <ul class="sponsars-2">
-                <li class="img_width">
-                  <img src="img/quot.svg" alt="img">
-                </li>
-                <li class="img_width">
-                  <img src="img/point.svg" alt="img">
-                </li>
-                <li>
-                  <img src="img/concier.svg" alt="img">
-                </li>
-                <li>
-                  <img src="img/cloudsnap.svg" alt="img">
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end sponsar area -->
-      <!-- start portfoilo area -->
-      <div class="portfoilo_area">
-        <div class="container">
-          <div class="row custom_width justify-content-between">
-            <div class="col-lg-6">
-              <div class="portfoilo_box_wrapper v1">
-                <div class="box" data-aos="fade-up" data-aos-duration="1000">
-                  <a href="https://loudcrowd.com/" target="_blank" class="img_area">
-                    <img class="img-fluid" src="img/loudcrowd.jpg" alt="img">
-                  </a>
-                  <a href="https://loudcrowd.com/" target="_blank">
-                    <h3>LoudCrowd</h3>
-                    <p>Desiging a social media CRM from the ground up</p>
-                    <span>platform, design system</span>
-                  </a>
-                </div>
-                <div class="box mt_100" data-aos="fade-up" data-aos-duration="1000">
-                  <a href="https://awning.com/" target="_blank" class="img_area">
-                    <img class="img-fluid" src="img/awning.jpg" alt="img">
-                  </a>
-                  <a href="https://awning.com/" target="_blank">
-                    <h3>Awning</h3>
-                    <p>Data-rich property listings for second-home buyers</p>
-                    <span>platform, design system</span>
-                  </a>
-                </div>
-                <div class="box mt_100" data-aos="fade-up" data-aos-duration="1000">
-                  <a href="https://www.tango.us/" target="_blank" class="img_area">
-                    <img class="img-fluid" src="img/tango.jpg" alt="img">
-                  </a>
-                  <a href="https://www.tango.us/" target="_blank">
-                    <h3>Tango</h3>
-                    <p>Improving the Editor experience for step-by-step workflow docs</p>
-                    <span>platform, design system</span>
-                    </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="portfoilo_box_wrapper">
-                <div class="box mobile_margin" data-aos="fade-up" data-aos-duration="1000">
-                  <a href="https://www.zendesk.com/service/analytics/" target="_blank" class="img_area">
-                    <img class="img-fluid" src="img/zendesk.jpg" alt="img">
-                  </a>
-                  <a href="https://www.zendesk.com/service/analytics/" target="_blank">
-                    <h3>Zendesk</h3>
-                    <p>Giving customer support teams instant access to their customer data</p>
-                    <span>platform, research</span>
-                  </a>
-                </div>
-                <div class="box mt_100" data-aos="fade-up" data-aos-duration="1000">
-                  <a  href="https://www.pointhealth.com/mobile-app" target="_blank" class="img_area">
-                    <img class="img-fluid" src="img/pointhealth.jpg" alt="img">
-                  </a>
-                  <a href="https://www.pointhealth.com/mobile-app" target="_blank">
-                    <h3>Point Health</h3>
-                    <p>Helping uninsured people find the best care</p>
-                    <span>mobile app, brand, design system</span>
-                  </a>
-                </div>
-                <div class="box mt_100" data-aos="fade-up" data-aos-duration="1000">
-                  <a href="https://www.conciergeteam.co/" target="_blank" class="img_area">
-                    <img class="img-fluid" src="img/concierge.jpg" alt="img">
-                  </a>
-                  <a href="https://www.conciergeteam.co/" target="_blank">
-                    <h3>Concierge</h3>
-                    <p>Enabling retail brands to send SMS marketing campaigns at scale</p>
-                    <span>platform, website, brand, design system</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end portfolio area -->
-      <!-- start faq area -->
-      <div class="faq_area" data-aos="fade-up" data-aos-duration="1000">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-10">
-              <div class="faq_area_content">
-                <h2 class="title">FAQ</h2>
-                <div class="accordion" id="accordionExample">
-                  <div class="card card_1">
-                    <div class="card_header">
-                      <button class="btn btn-link btn-block text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
-                      <span>What’s your design process?</span>
-                      <span class="icon_box_wrapper">
-                      <span class="icon_wrapper"></span>
-                      </span>
-                      </button>
-                    </div>
-                    <div id="collapseOne" class="collapse" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <p>I’m an end-to-end product designer who collaborates at every business<br> level. My approach is designed to evolve the development processes and<br> the user experience.</p>
-                        <div class="c1-box mt_25">
-                          <h2>1. Discovery</h2>
-                          <p>I start by consolidating all available project documentation and schedule<br> workshops with your team. During those sessions, I interview<br> stakeholders, collaborate on requirements, ideate, and plan the next steps.<br> When possible, I talk to your current or potential customers to understand<br> their needs and pain points. I will also review competitor products, gather<br> visual design references, and document best practices.</p>
-                        </div>
-                        <div class="c1-box mt_25">
-                          <h2>2. Definition</h2>
-                          <p>Based on the discovery and research results, I synthesize a digital strategy<br> and define a UX approach that drives the rest of the project. I craft a crisp<br> set of user needs (JTBD) and work with product teams to establish KPIs<br> for success. I conduct user interviews to validate the strategy before a line<br> of code is written. This ensures we’re building something viable.</p>
-                        </div>
-                        <div class="c1-box mt_25">
-                          <h2>3. Execution</h2>
-                          <p>I then move into delivery mode by producing interactive prototypes, user<br> flows, wireframes, and high-fidelity UIs. I pair with developers in the<br> environment of choice to get the fit and finish right, continuously<br> conducting user tests and iterating along the way.</p>
-                        </div>
-                        <div class="c1-box mt_25">
-                          <h2>4. Phased release</h2>
-                          <p>I work with Engineering teams to feature flag solutions to affected groups.<br> Tools like FullStory and HotJar are incredibly beneficial in studying new<br> feature adoption. I compile a list of improvements based on new insights.<br> Rinse and repeat.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card_header">
-                      <button class="btn btn-link btn-block text-left collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
-                      <span>What sectors do you specialize in?</span>
-                      <span class="icon_box_wrapper">
-                      <span class="icon_wrapper"></span>
-                      </span>
-                      </button>
-                    </div>
-                    <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <p>I work primarily with B2B SaaS companies and funded startups that develop software in the finance, marketing, sales, healthcare, productivity, and communication sectors. I like to collaborate closely with CEOs, Founders, CPOs, and VPs of Marketing, Product, or Technology.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card_header">
-                      <button class="btn btn-link btn-block text-left collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
-                      <span>Do you collaborate in-person?</span>
-                      <span class="icon_box_wrapper">
-                      <span class="icon_wrapper"></span>
-                      </span>
-                      </button>
-                    </div>
-                    <div id="collapseThree" class="collapse" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <p>Currently, I’m meeting only over the phone or video conference. On occasion, I take kickoff meetings at one of the many gorgeous outdoor patios in Austin, TX.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card_header">
-                      <button class="btn btn-link btn-block text-left collapsed" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false">
-                      <span>How do I start a project with you?</span>
-                      <span class="icon_box_wrapper">
-                      <span class="icon_wrapper"></span>
-                      </span>
-                      </button>
-                    </div>
-                    <div id="collapsefour" class="collapse" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <p>I focus on human-centric design, which includes the process outlined above. I always suggest emailing me first to discuss your project needs in detail.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card_header">
-                      <button class="btn btn-link btn-block text-left collapsed" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false">
-                      <span>Will you rebrand my startup?</span>
-                      <span class="icon_box_wrapper">
-                      <span class="icon_wrapper"></span>
-                      </span>
-                      </button>
-                    </div>
-                    <div id="collapsefive" class="collapse" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <p>No, but I take on branding projects that may be a good fit on rare occasions. I work with several graphic designers specializing in illustration and identity should you need branding work in addition to product development.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="card_header">
-                      <button class="btn btn-link btn-block text-left collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false">
-                      <span>What other services do you provide?</span>
-                      <span class="icon_box_wrapper">
-                      <span class="icon_wrapper"></span>
-                      </span>
-                      </button>
-                    </div>
-                    <div id="collapsesix" class="collapse" data-parent="#accordionExample">
-                      <div class="card-body">
-                        <p>Excellent question! I partner with several creative partners in the Austin area that can help provide the following services, Photography, Illustration, Motion Graphics, Videography, and Front-end development.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end faq area -->
-      <!-- start footer area -->
-      <footer>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-10">
-              <div class="row">
-                <div class="col-8">
-                  <div class="footer_box">
-                    <h2>Let’s chat</h2>
-                    <a href="mailto:brntpalmer@gmail.com">hello@brentpalmer.design</a>
-                  </div>
-                </div>
-                <div class="col-4 text-right">
-                  <div class="footer_logo">
-                    <a href="index.html">
-                    <img src="img/logo.svg" alt="img">
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="row row_2">
-                <div class="col-lg col-md-6 order_column2">
-                  <div class="footer_box">
-                    <p>© Brent Palmer Design, LLC<br> Made in the ATX</p>
-                  </div>
-                </div>
-                <div class="col-lg col-md-6 order_column1">
-                  <div class="footer_box last">
-                    <div class="footer_menu mr_50">
-                      <a href="https://www.linkedin.com/in/brentpalmerdesign/" target="_blank">LinkedIn</a>
-                      <a href="https://dribbble.com/brentapalmer" target="_blank">Dribbble</a>
-                      <a href="https://brentpalmer.medium.com/" target="_blank">Medium</a>
-                    </div>
-                    <div class="footer_menu">
-                      <a href="https://twitter.com/brentpalmer" target="_blank">Twitter</a>
-                      <a href="https://www.instagram.com/tejascocktails/" target="_blank">Instagram</a>
-                      <a href="https://github.com/brent-palmer" target="_blank">Github</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- end footer area -->
-    </main>
-    <!-- start back to top -->
-    <a class="back-to-top" href="#"><i class="fal fa-angle-up"></i></a>
-    <!-- end back to top -->
-    <!-- all js here -->
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <script src="js/main.js"></script>
+    <div id="home" class="main home">
+      <section class="lead">
+        <h1>ADAM ZHU</h1>
+        <p>
+          Software engineer specializing in empowering people through
+          communication and technology.
+        </p>
+        <a href="#about" class="btn about">about me</a>
+      </section>
+    </div>
+    <div id="about" class="main about">
+      <section class="lead">
+        <h2>ABOUT</h2>
+        <p>
+          I am a software engineer, leader, and follower. I'm passionate about facilitating success through clear and inclusive communication and good code.
+        </p>
+        <p>
+          I grew through my career as a member of tight teams in early stage startups. I've had lots of experience building digital products in a variety of circumstances. I've also had experience coordinating teams.
+        </p>
+        <p>
+          I measure my success by the success of those around me. My greatest passion is sustainable growth, and my strongest traits are my knack for learning, my devotion to honesty, and my openness to experience.
+        </p>
+        <a href="#resume" class="btn resume">view my resume</a>
+      </section>
+    </div>
+    <div id="resume" class="main resume">
+      <section class="lead">
+        <h2>RESUME</h2>
+      </section>
+      <section class="education">
+        <h3>Education</h3>
+        <p>
+          <strong>Clemson</strong>
+          <span>2008-2010</span>
+          Computer Science (transferred)
+        </p>
+        <p>
+          <strong>College of Charleston</strong>
+          <span>2010-2011, 2012-2014</span>
+          Data Science, B.S.
+        </p>
+      </section>
+      <section class="employment-history">
+        <h3>Employment History</h3>
+        <p>
+          <a href=" https://www.tango.us" target="_blank"
+            ><strong>Tango</strong></a
+          >
+          <span>Jun 2021 - Dec 2021 (contract)</span>
+          <span>Software Engineer</span>
+          <em class="tech"
+            >Javascript, Typescript, React.js, Next.js, Apollo, GraphQL</em
+          >
+          <span class="desc"
+            >Frontend engineer at a seed stage startup. Contract role when company was soft launching and monetizing. Product of the Week on ProductHunt.</span
+          >
+        </p>
+        <p>
+          <a href=" https://www.letsdecorateapp.com" target="_blank"
+            ><strong>Self Employed (Let's Decorate)</strong></a
+          >
+          <span>Jun 2020 - Oct 2020</span>
+          <span>Freelance developer</span>
+          <em class="tech"
+            >Javascript, Typescript, React.js, Ionic, Serverless, Back4App,
+            Twilio, Google Cloud, AWS, project management</em
+          >
+          <span class="desc"
+            >Interior design consultation progressive web app built as a solo freelance project.</span
+          >
+        </p>
+        <p>
+          <a href=" https://www.bestow.com" target="_blank"
+            ><strong>Bestow</strong></a
+          >
+          <span>Feb 2020 - Jun 2020</span>
+          <span>Senior Software Engineer II / Technical Lead</span>
+          <em class="tech"
+            >JavaScript, React.js, Redux, Typescript, people management &
+            leadership</em
+          >
+          <span class="desc"
+            >Technical lead hired to course correct a mission critical frontend codebase
+            and poorly performing engineering team. Delivered a major product
+            initiative and introduced a complete repository rewrite RFC/ADR. Exited role due to insufficient leadership experience.</span
+          >
+        </p>
+        <p>
+          <a href=" https://www.zerocater.com" target="_blank"
+            ><strong>ZeroCater</strong></a
+          >
+          <span>Oct 2018 - Feb 2020</span>
+          <span
+            >Lead Frontend Software
+            Engineer</span
+          >
+          <em class="tech"
+            >JavaScript, React.js, Redux, Typescript, Next.js, Vue.js, Django,
+            Postgres, Docker, people management & leadership</em
+          >
+          <span class="desc"
+            >Frontend technical lead. Architected codebase and processes, cut tickets, and owned hiring processes. Built new products and features. Technically managed and mentored teammates.</span
+          >
+        </p>
+        <p class="pagebreak">
+          <a href=" https://www.spredfast.com" target="_blank"
+            ><strong
+              >Spredfast
+              <span style="font-weight: normal; display: inline"
+                >(acquired, now Khoros)</span
+              ></strong
+            ></a
+          >
+          <span>Jul 2018 - Sep 2018</span>
+          <span>Software Engineer</span>
+          <em class="tech"
+            >JavaScript, React.js, Redux, Redux Saga, Reselect,
+            styled-components</em
+          >
+          <span class="desc"
+            >Implemented frontend features for an enterprise social media analytics platform. Some users were Delta Airlines, The NFL, and National
+            Geographic. Transitioned out due to acquisition.</span
+          >
+        </p>
+        <p>
+          <a href="https://www.threatcare.com" target="_blank"
+            ><strong>Threatcare</strong></a
+          >
+          <span>Apr 2018 - Jul 2018</span>
+          <span>Lead Software Engineer</span>
+          <em class="tech"
+            >JavaScript, React.js, Flow, Typescript, Node.js, GraphQL, Apollo,
+            Postgres, Ruby on Rails, Docker, people management & leadership</em
+          >
+          <span class="desc"
+            >One of an engineering team of three in a nascent startup. Owned the
+            creation and implementation of frontend processes. Mentored and
+            managed a junior. Supported a legacy platform for digital security
+            assessment automation and drove a product redesign. Architected,
+            built, managed, and launched a policy generation product. Exited due to lack of funding.</span
+          >
+        </p>
+        <p>
+          <a href="https://www.cbancnetwork.com" target="_blank"
+            ><strong>CBANC Network</strong></a
+          >
+          <span>Aug 2016 - Apr 2018</span>
+          <span>Software Engineer / Lead Software Engineer</span>
+          <em class="tech"
+            >JavaScript, Mercury.js, React.js, Elm, Node.js, Express.js, Neo4j,
+            nginx, Docker</em
+          >
+          <span class="desc"
+            >Full stack software engineer supporting an ecosystem of
+            applications to connect and support small bank and community credit
+            union professionals. Drove growth hacking product decisions and
+            fully owned their design, implementation, and maintenance. Junior to
+            lead in 6 months.</span
+          >
+        </p>
+        <p>
+          <a href="https://www.intersysconsulting.com" target="_blank"
+            ><strong>Intersys Consulting</strong></a
+          >
+          <span>May 2016 - Aug 2016 (Contract)</span>
+          <span>Lead UI Developer</span>
+          <em class="tech">JavaScript, React.js</em>
+          <span class="desc"
+            >Architected a frontend for an enterprise TV ratings report
+            generator proof of concept.</span
+          >
+        </p>
+        <p>
+          <a href="https://www.obviouslee.com" target="_blank"
+            ><strong>Obviouslee Marketing</strong></a
+          >
+          <span>Sep 2014 - Apr 2016</span>
+          <span>Web Developer</span>
+          <em class="tech">WordPress, PHP, JavaScript, Squarespace, Shopify</em>
+          <span class="desc"
+            >Sole technical employee at a full service marketing agency. Owned
+            the web development department. Coordinated with clients to address
+            their web presence needs. Worked with designers to translate client
+            needs into design assets. Built web experiences for clients.
+            Transitioned to explore broader web technologies.</span
+          >
+        </p>
+        <p>
+          <a href="https://www.jobmarketmaker.com" target="_blank"
+            ><strong>Job Market Maker</strong></a
+          >
+          <span>May 2014 - Aug 2014</span>
+          <span>Data Scientist</span>
+          <em class="tech">.NET, SQL Server</em>
+          <span class="desc"
+            >Fourth hire. Built an SQL data model to support algorithmic
+            matching of job candidates with open positions. Created a web
+            application for data entry to populate a database for algorithm
+            testing.</span
+          >
+        </p>
+        <p>
+          <a href="http://manufactur.co" target="_blank"
+            ><strong>Manufactur</strong></a
+          >
+          <span>May 2012 - May 2014</span>
+          <span>Web Developer</span>
+          <em class="tech">WordPress, PHP, JavaScript, Magento</em>
+          <span class="desc"
+            >Worked with designers to create web experiences for food & beverage
+            and entertainment industry clients. Transitioned out to seek
+            opportunities in data science.</span
+          >
+        </p>
+        <a href="#contact" class="btn contact">get in touch</a>
+      </section>
+    </div>
+    <div id="contact" class="main contact">
+      <section class="lead">
+        <h2>CONTACT</h2>
+        <p>
+          <strong><a href="mailto:adam@adamz.hu">adam@adamz.hu</a></strong>
+          <span><a href="tel:18434529003">+1 (843) 452-9003</a></span>
+          Brooklyn, New York
+        </p>
+        <a href="#home" class="btn home">back to home</a>
+      </section>
+    </div>
+    <script>
+      'use strict';
+
+      // polyfill https://github.com/iamdustan/smoothscroll
+      function polyfill() {
+        // aliases
+        var w = window;
+        var d = document;
+
+        // return if scroll behavior is supported and polyfill is not forced
+        if (
+          'scrollBehavior' in d.documentElement.style &&
+          w.__forceSmoothScrollPolyfill__ !== true
+        ) {
+          return;
+        }
+
+        // globals
+        var Element = w.HTMLElement || w.Element;
+        var SCROLL_TIME = 468;
+
+        // object gathering original scroll methods
+        var original = {
+          scroll: w.scroll || w.scrollTo,
+          scrollBy: w.scrollBy,
+          elementScroll: Element.prototype.scroll || scrollElement,
+          scrollIntoView: Element.prototype.scrollIntoView,
+        };
+
+        // define timing method
+        var now =
+          w.performance && w.performance.now
+            ? w.performance.now.bind(w.performance)
+            : Date.now;
+
+        /**
+         * indicates if a the current browser is made by Microsoft
+         * @method isMicrosoftBrowser
+         * @param {String} userAgent
+         * @returns {Boolean}
+         */
+        function isMicrosoftBrowser(userAgent) {
+          var userAgentPatterns = ['MSIE ', 'Trident/', 'Edge/'];
+
+          return new RegExp(userAgentPatterns.join('|')).test(userAgent);
+        }
+
+        /*
+         * IE has rounding bug rounding down clientHeight and clientWidth and
+         * rounding up scrollHeight and scrollWidth causing false positives
+         * on hasScrollableSpace
+         */
+        var ROUNDING_TOLERANCE = isMicrosoftBrowser(w.navigator.userAgent)
+          ? 1
+          : 0;
+
+        /**
+         * changes scroll position inside an element
+         * @method scrollElement
+         * @param {Number} x
+         * @param {Number} y
+         * @returns {undefined}
+         */
+        function scrollElement(x, y) {
+          this.scrollLeft = x;
+          this.scrollTop = y;
+        }
+
+        /**
+         * returns result of applying ease math function to a number
+         * @method ease
+         * @param {Number} k
+         * @returns {Number}
+         */
+        function ease(k) {
+          return 0.5 * (1 - Math.cos(Math.PI * k));
+        }
+
+        /**
+         * indicates if a smooth behavior should be applied
+         * @method shouldBailOut
+         * @param {Number|Object} firstArg
+         * @returns {Boolean}
+         */
+        function shouldBailOut(firstArg) {
+          if (
+            firstArg === null ||
+            typeof firstArg !== 'object' ||
+            firstArg.behavior === undefined ||
+            firstArg.behavior === 'auto' ||
+            firstArg.behavior === 'instant'
+          ) {
+            // first argument is not an object/null
+            // or behavior is auto, instant or undefined
+            return true;
+          }
+
+          if (typeof firstArg === 'object' && firstArg.behavior === 'smooth') {
+            // first argument is an object and behavior is smooth
+            return false;
+          }
+
+          // throw error when behavior is not supported
+          throw new TypeError(
+            'behavior member of ScrollOptions ' +
+              firstArg.behavior +
+              ' is not a valid value for enumeration ScrollBehavior.',
+          );
+        }
+
+        /**
+         * indicates if an element has scrollable space in the provided axis
+         * @method hasScrollableSpace
+         * @param {Node} el
+         * @param {String} axis
+         * @returns {Boolean}
+         */
+        function hasScrollableSpace(el, axis) {
+          if (axis === 'Y') {
+            return el.clientHeight + ROUNDING_TOLERANCE < el.scrollHeight;
+          }
+
+          if (axis === 'X') {
+            return el.clientWidth + ROUNDING_TOLERANCE < el.scrollWidth;
+          }
+        }
+
+        /**
+         * indicates if an element has a scrollable overflow property in the axis
+         * @method canOverflow
+         * @param {Node} el
+         * @param {String} axis
+         * @returns {Boolean}
+         */
+        function canOverflow(el, axis) {
+          var overflowValue = w.getComputedStyle(el, null)['overflow' + axis];
+
+          return overflowValue === 'auto' || overflowValue === 'scroll';
+        }
+
+        /**
+         * indicates if an element can be scrolled in either axis
+         * @method isScrollable
+         * @param {Node} el
+         * @param {String} axis
+         * @returns {Boolean}
+         */
+        function isScrollable(el) {
+          var isScrollableY =
+            hasScrollableSpace(el, 'Y') && canOverflow(el, 'Y');
+          var isScrollableX =
+            hasScrollableSpace(el, 'X') && canOverflow(el, 'X');
+
+          return isScrollableY || isScrollableX;
+        }
+
+        /**
+         * finds scrollable parent of an element
+         * @method findScrollableParent
+         * @param {Node} el
+         * @returns {Node} el
+         */
+        function findScrollableParent(el) {
+          var isBody;
+
+          do {
+            el = el.parentNode;
+
+            isBody = el === d.body;
+          } while (isBody === false && isScrollable(el) === false);
+
+          isBody = null;
+
+          return el;
+        }
+
+        /**
+         * self invoked function that, given a context, steps through scrolling
+         * @method step
+         * @param {Object} context
+         * @returns {undefined}
+         */
+        function step(context) {
+          var time = now();
+          var value;
+          var currentX;
+          var currentY;
+          var elapsed = (time - context.startTime) / SCROLL_TIME;
+
+          // avoid elapsed times higher than one
+          elapsed = elapsed > 1 ? 1 : elapsed;
+
+          // apply easing to elapsed time
+          value = ease(elapsed);
+
+          currentX = context.startX + (context.x - context.startX) * value;
+          currentY = context.startY + (context.y - context.startY) * value;
+
+          context.method.call(context.scrollable, currentX, currentY);
+
+          // scroll more if we have not reached our destination
+          if (currentX !== context.x || currentY !== context.y) {
+            w.requestAnimationFrame(step.bind(w, context));
+          }
+        }
+
+        /**
+         * scrolls window or element with a smooth behavior
+         * @method smoothScroll
+         * @param {Object|Node} el
+         * @param {Number} x
+         * @param {Number} y
+         * @returns {undefined}
+         */
+        function smoothScroll(el, x, y) {
+          var scrollable;
+          var startX;
+          var startY;
+          var method;
+          var startTime = now();
+
+          // define scroll context
+          if (el === d.body) {
+            scrollable = w;
+            startX = w.scrollX || w.pageXOffset;
+            startY = w.scrollY || w.pageYOffset;
+            method = original.scroll;
+          } else {
+            scrollable = el;
+            startX = el.scrollLeft;
+            startY = el.scrollTop;
+            method = scrollElement;
+          }
+
+          // scroll looping over a frame
+          step({
+            scrollable: scrollable,
+            method: method,
+            startTime: startTime,
+            startX: startX,
+            startY: startY,
+            x: x,
+            y: y,
+          });
+        }
+
+        // ORIGINAL METHODS OVERRIDES
+        // w.scroll and w.scrollTo
+        w.scroll = w.scrollTo = function () {
+          // avoid action when no arguments are passed
+          if (arguments[0] === undefined) {
+            return;
+          }
+
+          // avoid smooth behavior if not required
+          if (shouldBailOut(arguments[0]) === true) {
+            original.scroll.call(
+              w,
+              arguments[0].left !== undefined
+                ? arguments[0].left
+                : typeof arguments[0] !== 'object'
+                ? arguments[0]
+                : w.scrollX || w.pageXOffset,
+              // use top prop, second argument if present or fallback to scrollY
+              arguments[0].top !== undefined
+                ? arguments[0].top
+                : arguments[1] !== undefined
+                ? arguments[1]
+                : w.scrollY || w.pageYOffset,
+            );
+
+            return;
+          }
+
+          // LET THE SMOOTHNESS BEGIN!
+          smoothScroll.call(
+            w,
+            d.body,
+            arguments[0].left !== undefined
+              ? ~~arguments[0].left
+              : w.scrollX || w.pageXOffset,
+            arguments[0].top !== undefined
+              ? ~~arguments[0].top
+              : w.scrollY || w.pageYOffset,
+          );
+        };
+
+        // w.scrollBy
+        w.scrollBy = function () {
+          // avoid action when no arguments are passed
+          if (arguments[0] === undefined) {
+            return;
+          }
+
+          // avoid smooth behavior if not required
+          if (shouldBailOut(arguments[0])) {
+            original.scrollBy.call(
+              w,
+              arguments[0].left !== undefined
+                ? arguments[0].left
+                : typeof arguments[0] !== 'object'
+                ? arguments[0]
+                : 0,
+              arguments[0].top !== undefined
+                ? arguments[0].top
+                : arguments[1] !== undefined
+                ? arguments[1]
+                : 0,
+            );
+
+            return;
+          }
+
+          // LET THE SMOOTHNESS BEGIN!
+          smoothScroll.call(
+            w,
+            d.body,
+            ~~arguments[0].left + (w.scrollX || w.pageXOffset),
+            ~~arguments[0].top + (w.scrollY || w.pageYOffset),
+          );
+        };
+
+        // Element.prototype.scroll and Element.prototype.scrollTo
+        Element.prototype.scroll = Element.prototype.scrollTo = function () {
+          // avoid action when no arguments are passed
+          if (arguments[0] === undefined) {
+            return;
+          }
+
+          // avoid smooth behavior if not required
+          if (shouldBailOut(arguments[0]) === true) {
+            // if one number is passed, throw error to match Firefox implementation
+            if (
+              typeof arguments[0] === 'number' &&
+              arguments[1] === undefined
+            ) {
+              throw new SyntaxError('Value could not be converted');
+            }
+
+            original.elementScroll.call(
+              this,
+              // use left prop, first number argument or fallback to scrollLeft
+              arguments[0].left !== undefined
+                ? ~~arguments[0].left
+                : typeof arguments[0] !== 'object'
+                ? ~~arguments[0]
+                : this.scrollLeft,
+              // use top prop, second argument or fallback to scrollTop
+              arguments[0].top !== undefined
+                ? ~~arguments[0].top
+                : arguments[1] !== undefined
+                ? ~~arguments[1]
+                : this.scrollTop,
+            );
+
+            return;
+          }
+
+          var left = arguments[0].left;
+          var top = arguments[0].top;
+
+          // LET THE SMOOTHNESS BEGIN!
+          smoothScroll.call(
+            this,
+            this,
+            typeof left === 'undefined' ? this.scrollLeft : ~~left,
+            typeof top === 'undefined' ? this.scrollTop : ~~top,
+          );
+        };
+
+        // Element.prototype.scrollBy
+        Element.prototype.scrollBy = function () {
+          // avoid action when no arguments are passed
+          if (arguments[0] === undefined) {
+            return;
+          }
+
+          // avoid smooth behavior if not required
+          if (shouldBailOut(arguments[0]) === true) {
+            original.elementScroll.call(
+              this,
+              arguments[0].left !== undefined
+                ? ~~arguments[0].left + this.scrollLeft
+                : ~~arguments[0] + this.scrollLeft,
+              arguments[0].top !== undefined
+                ? ~~arguments[0].top + this.scrollTop
+                : ~~arguments[1] + this.scrollTop,
+            );
+
+            return;
+          }
+
+          this.scroll({
+            left: ~~arguments[0].left + this.scrollLeft,
+            top: ~~arguments[0].top + this.scrollTop,
+            behavior: arguments[0].behavior,
+          });
+        };
+
+        // Element.prototype.scrollIntoView
+        Element.prototype.scrollIntoView = function () {
+          // avoid smooth behavior if not required
+          if (shouldBailOut(arguments[0]) === true) {
+            original.scrollIntoView.call(
+              this,
+              arguments[0] === undefined ? true : arguments[0],
+            );
+
+            return;
+          }
+
+          // LET THE SMOOTHNESS BEGIN!
+          var scrollableParent = findScrollableParent(this);
+          var parentRects = scrollableParent.getBoundingClientRect();
+          var clientRects = this.getBoundingClientRect();
+
+          if (scrollableParent !== d.body) {
+            // reveal element inside parent
+            smoothScroll.call(
+              this,
+              scrollableParent,
+              scrollableParent.scrollLeft + clientRects.left - parentRects.left,
+              scrollableParent.scrollTop + clientRects.top - parentRects.top,
+            );
+
+            // reveal parent in viewport unless is fixed
+            if (w.getComputedStyle(scrollableParent).position !== 'fixed') {
+              w.scrollBy({
+                left: parentRects.left,
+                top: parentRects.top,
+                behavior: 'smooth',
+              });
+            }
+          } else {
+            // reveal element in viewport
+            w.scrollBy({
+              left: clientRects.left,
+              top: clientRects.top,
+              behavior: 'smooth',
+            });
+          }
+        };
+      }
+
+      polyfill();
+
+      const throttle = (fn, incr) => {
+        let timestamp = undefined;
+
+        return (args) => {
+          if (timestamp === undefined) {
+            timestamp = new Date();
+
+            return fn(args);
+          }
+
+          if (new Date() - timestamp >= incr) {
+            timestamp = undefined;
+
+            return fn(args);
+          }
+
+          return;
+        };
+      };
+
+      (function () {
+        var el_nav;
+        var menu_items;
+        var sections;
+
+        function set_body_class(className) {
+          document.body.className = className;
+        }
+
+        function add_active_class(nodeList) {
+          Array.prototype.forEach.call(nodeList, function (el) {
+            el.classList.add('active');
+          });
+        }
+
+        function remove_active_class(nodeList) {
+          Array.prototype.forEach.call(nodeList, function (el) {
+            el.classList.remove('active');
+          });
+        }
+
+        function set_menu_item_active(item_name) {
+          Object.keys(menu_items).forEach(function (k) {
+            k === item_name
+              ? add_active_class(menu_items[k])
+              : remove_active_class(menu_items[k]);
+          });
+        }
+
+        function is_active_section(el) {
+          const bounding = el.getBoundingClientRect();
+
+          return (
+            bounding.top + bounding.height >=
+            (window.innerHeight || document.documentElement.clientHeight) / 2
+          );
+        }
+
+        function handle_scroll() {
+          if (window.scrollTop === 0) {
+            (el_nav || document.querySelector('nav')).classList.add('unfixed');
+          } else {
+            (el_nav || document.querySelector('nav')).classList.remove(
+              'unfixed',
+            );
+          }
+
+          return Object.keys(sections || {}).some((section_key) => {
+            const is_active = is_active_section(
+              sections[section_key] ||
+                document.querySelector(`.main.${section_key}`),
+            );
+
+            if (is_active) {
+              set_menu_item_active(section_key);
+              set_body_class(section_key);
+            }
+
+            return is_active;
+          });
+        }
+
+        window.addEventListener('load', function () {
+          el_nav = document.querySelector('nav');
+          menu_items = {
+            home: document.querySelectorAll('nav .home, .btn.home'),
+            about: document.querySelectorAll('nav .about, .btn.about'),
+            resume: document.querySelectorAll('nav .resume, .btn.resume'),
+            contact: document.querySelectorAll('nav .contact, .btn.contact'),
+          };
+          sections = {
+            home: document.querySelector('.main.home'),
+            about: document.querySelector('.main.about'),
+            resume: document.querySelector('.main.resume'),
+            contact: document.querySelector('.main.contact'),
+          };
+
+          Object.keys(menu_items).forEach(function (item_name) {
+            Array.prototype.forEach.call(menu_items[item_name], function (el) {
+              el.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                sections[item_name].scrollIntoView({ behavior: 'smooth' });
+                set_menu_item_active(item_name);
+              });
+            });
+          });
+
+          $('.button-collapse').sideNav({ closeOnClick: true });
+
+          handle_scroll();
+        });
+
+        window.addEventListener('scroll', throttle(handle_scroll, 100));
+      })();
+    </script>
   </body>
 </html>
