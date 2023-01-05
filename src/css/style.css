@@ -78,6 +78,7 @@ h1 {
   font-size: 3.5em;
   font-style: normal;
 	line-height: 140%;
+  font-kerning: auto;
 	margin-top: 0;
 	font-weight: 400;
 }
@@ -146,7 +147,7 @@ img {max-width:100%;padding: 0;margin:0;}
 }
 
 #container {
-	max-width: 1150px;
+	max-width: 800px;
 	margin:0 auto;
 	text-align: left;			
 }
