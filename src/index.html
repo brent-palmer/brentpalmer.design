@@ -1,1171 +1,158 @@
+<!doctype html>
+<html lang="en-US" style="margin-top: 0 !important;">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Brent Palmer - Home</title>
-    <meta
-      name="google-site-verification"
-      content="5feI6uiWc3UkwiSIEJ_fcT2yMIlwYDIa6W-wMPbGuLQ"
-    />
-    <meta
-      name="description"
-      content="Brent Palmer | Design Manager and Product Leader."
-    />
-    <!-- <meta name=viewport content="width=device-width,initial-scale=1,user-scalable=no"> -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
-    <style>
-      [data-sr] {
-        visibility: hidden;
-      }
-    </style>
-    <link rel=apple-touch-icon sizes=57x57
-    href=assets/apple-touch-icon-57x57.png> <link rel=apple-touch-icon
-    sizes=60x60 href=assets/apple-touch-icon-60x60.png> <link
-    rel=apple-touch-icon sizes=72x72 href=assets/apple-touch-icon-72x72.png>
-    <link rel=apple-touch-icon sizes=76x76
-    href=assets/apple-touch-icon-76x76.png> <link rel=apple-touch-icon
-    sizes=114x114 href=assets/apple-touch-icon-114x114.png> <link
-    rel=apple-touch-icon sizes=120x120 href=assets/apple-touch-icon-120x120.png>
-    <link rel=apple-touch-icon sizes=144x144
-    href=assets/apple-touch-icon-144x144.png> <link rel=apple-touch-icon
-    sizes=152x152 href=assets/apple-touch-icon-152x152.png> <link
-    rel=apple-touch-icon sizes=180x180 href=assets/apple-touch-icon-180x180.png>
-    <link rel=icon type=image/png href=assets/favicon-32x32.png sizes=32x32>
-    <link rel=icon type=image/png href=assets/android-chrome-192x192.png
-    sizes=192x192> <link rel=icon type=image/png href=assets/favicon-96x96.png
-    sizes=96x96> <link rel=icon type=image/png href=assets/favicon-16x16.png
-    sizes=16x16> <link rel=manifest href=assets/manifest.json>
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name=msapplication-TileImage content=/mstile-144x144.png>
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:url" content="http://brentpalmer.design" />
-    <meta property="og:site_name" content="Brent Palmer | Product Design Leader." />
-    <meta property="og:title" content="Brent Palmer | Product Design Leader." />
-    <meta
-      property="og:description"
-      content="Software engineer specializing in empowering people through communication and technology."
-    />
-    <meta
-      property="og:image"
-      content="http://adamzhu.co/site_preview_image.png"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
-    />
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-      html,
-      body {
-        font-family: 'Roboto Mono', monospace;
-        overflow-x: hidden;
-        -webkit-overflow-scrolling: touch;
-        transition: background-color 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63);
-        color: #212121;
-        scroll-behavior: smooth;
-      }
-      .print-show {
-        display: none;
-      }
-      nav {
-        transition: background-color 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63),
-          box-shadow 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63);
-      }
-      nav ul.main-nav li a {
-        background: transparent !important;
-        color: #212121;
-      }
-      nav ul.main-nav li {
-        background-color: transparent !important;
-        transition: border 0.15s ease-in-out;
-        border-bottom: 0.125rem solid transparent;
-      }
-      nav ul.main-nav li:hover {
-        border-bottom: 0.125rem solid #484848;
-      }
-      nav ul.main-nav li.active {
-        border-bottom: 0.125rem solid #212121;
-      }
-      nav ul.main-nav li.active:hover {
-        border-bottom: 0.125rem solid #212121;
-      }
-      nav ul.side-nav li.active {
-        padding: 0 2.25rem;
-        border-color: transparent;
-        background-color: transparent;
-      }
-      nav ul.side-nav li.active a {
-        display: inline-block;
-        height: 2.5rem;
-        line-height: 2.5rem;
-        padding: 0.25rem 0.5rem 0.25rem 0;
-        border-bottom: 0.125rem solid #212121;
-      }
-      nav.unfixed {
-        box-shadow: none !important;
-      }
-      .nav-wrapper {
-        padding-left: 1rem;
-      }
-      .brand-logo {
-        padding-top: 6px !important;
-      }
-      .brand-logo img {
-        width: 2.25rem !important;
-        height: 2.25rem !important;
-      }
-      .main {
-        text-align: center;
-        padding: 0 2rem;
-        min-height: calc(100vh - 64px);
-      }
-      .main .lead {
-        padding-top: calc(2rem + 64px);
-      }
-      .main.resume {
-        padding-bottom: 4rem;
-      }
-      section {
-        width: 40%;
-        margin: auto;
-        text-align: left;
-      }
-      h1,
-      h2 {
-        font-size: 5.125rem;
-        font-weight: 700;
-        padding-bottom: 3rem;
-        border-bottom: 0.125rem solid #212121;
-        margin-bottom: 3.5rem;
-        text-align: left;
-      }
-      h2 {
-        text-align: right;
-      }
-      h3 {
-        font-size: 1.64rem;
-        line-height: 110%;
-        margin: 0.82rem 0 0.656rem 0;
-        text-align: left;
-      }
-      p {
-        margin: 1.68rem 0;
-        transition: color 0.15s ease-in-out;
-        text-align: left;
-      }
-      p a {
-        display: inline-block;
-        transition: color 0.15s ease-in-out;
-        color: #3f51b5;
-      }
-      p a:hover {
-        color: #002984;
-      }
-      p a:visited {
-        color: #6a0080;
-      }
-      strong {
-        display: block;
-        font-weight: bold !important;
-      }
-      span {
-        display: block;
-      }
-      .desc {
-        font-size: 12px;
-        margin-top: 4px;
-      }
-      .tech {
-        font-size: 12px;
-      }
-      .btn {
-        margin-top: 2rem;
-        background-color: #212121;
-      }
-      .btn:hover {
-        background-color: #484848;
-      }
-      #sidenav-overlay {
-        z-index: 996 !important;
-      }
-      body.home,
-      body.home nav {
-        background-color: #ff7961;
-      }
-      body.home .side-nav,
-      body.home .btn {
-        background-color: #f44336;
-      }
-      body.home .btn:hover {
-        background-color: #ba000d;
-      }
-      body.about,
-      body.about nav {
-        background-color: #fff350;
-      }
-      body.about .side-nav,
-      body.about .btn {
-        background-color: #ffc107;
-      }
-      body.about .btn:hover {
-        background-color: #c79100;
-      }
-      body.resume,
-      body.resume nav {
-        background-color: #6ec6ff;
-      }
-      body.resume .side-nav,
-      body.resume .btn {
-        background-color: #2196f3;
-      }
-      body.resume .btn:hover {
-        background-color: #0069c0;
-      }
-      body.contact,
-      body.contact nav {
-        background-color: #52c7b8;
-      }
-      body.contact .side-nav,
-      body.contact .btn {
-        background-color: #009688;
-      }
-      body.contact .btn:hover {
-        background-color: #00675b;
-      }
-      @media screen and (max-width: 600px) {
-        .main {
-          min-height: 100vh;
-        }
-        .main.home {
-          padding: 0 3rem 5rem 3rem;
-        }
-        .main.home .lead {
-          padding-top: 1rem;
-        }
-        section {
-          width: auto;
-        }
-      }
-      @media screen and (max-width: 374px) {
-        h1,
-        h2 {
-          font-size: 4.5rem;
-        }
-      }
-      @media print {
-        .print-show {
-          display: block;
-        }
-        .navbar-fixed,
-        nav,
-        .btn {
-          display: none;
-          height: 0;
-        }
-        body {
-          background: none !important;
-          height: auto !important;
-          color: #000 !important;
-        }
-        .main {
-          min-height: auto !important;
-          height: auto;
-          padding: 0 !important;
-          margin-bottom: 2rem !important;
-        }
-        .main .lead {
-          margin-top: 0 !important;
-          padding-top: 0 !important;
-        }
-        section {
-          width: 100% !important;
-          padding: 0 !important;
-          margin: 0 !important;
-          text-align: left !important;
-        }
-        section.education {
-          page-break-after: always;
-        }
-        h1,
-        h2 {
-          margin: 0 0 2rem 0 !important;
-          padding: 1rem 1rem 2rem 1rem !important;
-          font-size: 3rem !important;
-          border: none;
-          color: #fff;
-        }
-        a {
-          color: #000 !important;
-        }
-        p,
-        a,
-        span {
-          font-size: 0.8rem;
-        }
-        h3,
-        p {
-          padding-left: 1rem;
-          padding-right: 1rem;
-        }
-        .home h1 {
-          background-color: #f44336;
-        }
-        .about h2 {
-          background-color: #ffc107;
-        }
-        .resume h2 {
-          background-color: #2196f3;
-        }
-        .resume h3 {
-          color: #2196f3;
-        }
-        .contact h2 {
-          background-color: #009688;
-        }
-        .pagebreak {
-          page-break-after: always;
-        }
-      }
-    </style>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"
-    ></script>
-  </head>
-  <body class="home">
-    <div class="navbar-fixed">
-      <nav class="unfixed">
-        <div class="nav-wrapper">
-          <a href="/" class="brand-logo">
-            <img src="assets/cheese.png" />
-          </a>
-          <ul id="nav-mobile" class="right main-nav hide-on-med-and-down">
-            <li class="home active"><a href="#home">Home</a></li>
-            <li class="about"><a href="#about">About</a></li>
-            <li class="resume"><a href="#resume">Resume</a></li>
-            <li class="contact"><a href="#contact">Contact</a></li>
-          </ul>
-          <a href="#" data-activates="mobile-demo" class="button-collapse">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="side-nav" id="mobile-demo">
-            <li class="home active"><a href="#home">Home</a></li>
-            <li class="about"><a href="#about">About</a></li>
-            <li class="resume"><a href="#resume">Resume</a></li>
-            <li class="contact"><a href="#contact">Contact</a></li>
-          </ul>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+	<meta name="msapplication-TileColor" content="#1C5065">
+
+	<link rel="icon" href="https://mattdowney.co/wp-content/themes/mdv6/img/favicon-32.png" sizes="32x32">
+	<link rel="icon" href="https://mattdowney.co/wp-content/themes/mdv6/img/favicon-192.png" sizes="192x192">
+
+	<!-- Android -->
+	<link rel="shortcut icon" href="https://mattdowney.co/wp-content/themes/mdv6/img/favicon-384.png" sizes="384x384">
+
+	<!-- iOS -->
+	<link rel="apple-touch-icon" href="https://mattdowney.co/wp-content/themes/mdv6/img/apple-touch-icon.png" sizes="180x180">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+	<script async src="https://cdn.splitbee.io/sb.js"></script>
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v18.7 (Yoast SEO v19.14) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Matt Downey — Creative founder, designer, and entrepreneur</title>
+	<meta name="description" content="For more than a decade, I&#039;ve made my living online as a creative entrepreneur specializing in design, technology, marketing, and mindset." />
+	<link rel="canonical" href="https://mattdowney.co/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Home" />
+	<meta property="og:description" content="For more than a decade, I&#039;ve made my living online as a creative entrepreneur specializing in design, technology, marketing, and mindset." />
+	<meta property="og:url" content="https://mattdowney.co/" />
+	<meta property="og:site_name" content="Matt Downey" />
+	<meta property="article:modified_time" content="2022-12-31T05:59:47+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://mattdowney.co/","url":"https://mattdowney.co/","name":"Matt Downey — Creative founder, designer, and entrepreneur","isPartOf":{"@id":"https://mattdowney.co/#website"},"about":{"@id":"https://mattdowney.co/#/schema/person/9216f38e7d47f5b245f51e7019b40bb3"},"datePublished":"2018-09-24T21:01:07+00:00","dateModified":"2022-12-31T05:59:47+00:00","description":"For more than a decade, I've made my living online as a creative entrepreneur specializing in design, technology, marketing, and mindset.","breadcrumb":{"@id":"https://mattdowney.co/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://mattdowney.co/"]}]},{"@type":"BreadcrumbList","@id":"https://mattdowney.co/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://mattdowney.co/#website","url":"https://mattdowney.co/","name":"Matt Downey","description":"Designer at the intersection of web3, mindset, and entrepreneurship","publisher":{"@id":"https://mattdowney.co/#/schema/person/9216f38e7d47f5b245f51e7019b40bb3"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://mattdowney.co/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":["Person","Organization"],"@id":"https://mattdowney.co/#/schema/person/9216f38e7d47f5b245f51e7019b40bb3","name":"Matt","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://mattdowney.co/#/schema/person/image/","url":"https://mattdowney.co/wp-content/uploads/2021/02/newsletter-hero-matt.jpg","contentUrl":"https://mattdowney.co/wp-content/uploads/2021/02/newsletter-hero-matt.jpg","width":1600,"height":1200,"caption":"Matt"},"logo":{"@id":"https://mattdowney.co/#/schema/person/image/"}}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//code.jquery.com' />
+<link rel="alternate" type="application/rss+xml" title="Matt Downey &raquo; Feed" href="https://mattdowney.co/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Matt Downey &raquo; Comments Feed" href="https://mattdowney.co/comments/feed/" />
+<link rel='stylesheet' id='wp-block-library-css' href='https://mattdowney.co/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<style id='wp-block-library-inline-css' type='text/css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel='stylesheet' id='mediaelement-css' href='https://mattdowney.co/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css' href='https://mattdowney.co/wp-includes/js/mediaelement/wp-mediaelement.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://mattdowney.co/wp-includes/css/classic-themes.min.css' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='mdv6-style-css' href='https://mattdowney.co/wp-content/themes/mdv6/build/css/styles.css' type='text/css' media='all' />
+<script type='text/javascript' src='//code.jquery.com/jquery-3.2.1.min.js' id='script-name-js'></script>
+<link rel="https://api.w.org/" href="https://mattdowney.co/wp-json/" /><link rel="alternate" type="application/json" href="https://mattdowney.co/wp-json/wp/v2/pages/5" /><link rel="alternate" type="application/json+oembed" href="https://mattdowney.co/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmattdowney.co%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://mattdowney.co/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmattdowney.co%2F&#038;format=xml" />
+	<style>img#wpstats{display:none}</style>
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+
+<body data-rsssl=1 class="home page-template-default page page-id-5">
+
+<div class="mdv6-content">
+<div class="fluid-container">
+    <div class="row no-gutters">
+        
+<div class="col-lg-4 col-sm-12 sidebar sidebar-desktop sticky-top">
+    <div class="nft-container">
+        <div class="sidebar-image-container">
+        <img src="https://mattdowney.co/wp-content/themes/mdv6/img/img-nft-nouneys-243.jpg" alt=" The Nouneys #243" />
+
+        <div class="sidebar-nft-desc">
+            <p class="nft-name">The Nouneys #243<span>
+                <a class="nft-link" href="https://opensea.io/assets/ethereum/0xfc5cdb3179a173a9b1b4a814c293bf2070d3c79a/243">View on OpenSea</a></span>
+            </p>
         </div>
-      </nav>
     </div>
-    <div id="home" class="main home">
-      <section class="lead">
-        <h1>ADAM ZHU</h1>
-        <p>
-          Software engineer specializing in empowering people through
-          communication and technology.
-        </p>
-        <a href="#about" class="btn about">about me</a>
-      </section>
+    
+    <img class="bg-nft" src="https://mattdowney.co/wp-content/themes/mdv6/img/img-nft-nouneys-243.jpg" alt=" The Nouneys #243" />
+        </div>
+</div>
+        <div class="col-lg-6 col-sm-12 offset-lg-1 offset-sm-0 page-content">
+            <div id="navigation-container">
+    <div class="row navigation">
+        <div class="col-md-2 col-sm-6 logo">
+            <a href="/">
+                <img src="https://mattdowney.co/wp-content/themes/mdv6/img/img-signature.svg" alt="MD" />
+            </a>
+        </div>
+    
+        <div class="col-md-10 col-sm-6 site-nav">
+            <div id="desktop-nav">
+                <ul>
+                    <li><a class="nav-about" href="https://mattdowney.co/about/">About</a></li>
+                    <li><a class="nav-blog" href="https://mattdowney.co/blog/">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div id="mobile-nav">                
+                <input id="nav" type="checkbox" />
+                <label for="nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a class="nav-about" href="https://brentpalmer.design/about/">About</a></li>
+                        <li><a class="nav-blog" href="https://brentpalmer.design/blog/">Blog</a></li>
+                        <li><a class="nav-social twitter" href="https://www.linkedin.com/in/brentpalmerdesign/" target="_blank" >LinkedIn</a></li>
+                        <li><a class="nav-social instagram" href="https://github.com/brent-palmer">GitHub</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
-    <div id="about" class="main about">
-      <section class="lead">
-        <h2>ABOUT</h2>
-        <p>
-          I am a software engineer, leader, and follower. I'm passionate about facilitating success through clear and inclusive communication and good code.
-        </p>
-        <p>
-          I grew through my career as a member of tight teams in early stage startups. I've had lots of experience building digital products in a variety of circumstances. I've also had experience coordinating teams.
-        </p>
-        <p>
-          I measure my success by the success of those around me. My greatest passion is sustainable growth, and my strongest traits are my knack for learning, my devotion to honesty, and my openness to experience.
-        </p>
-        <a href="#resume" class="btn resume">view my resume</a>
-      </section>
+</div>
+            
+<div class="col-lg-12 sidebar-mobile">
+    <div class="sidebar-image-container"><img src="https://mattdowney.co/wp-content/themes/mdv6/img/img-nft-cryptoadz-2391@2x.jpg" alt="CrypToadz #2391" /></div>
+     </div>
+            <div class="home-content page-content">
+                <div class="home-intro">
+                    <h1>I'm Matt, a creative founder at the convergence of design, technology, and entrepreneurship.</h1>
+                    <p>Right now I'm helping digital-native entrepreneurs grow successful businesses and create meaningful audience connections at <a href="https://buildyourbridge.io">Build Your Bridge</a>.</p>
+                    <a class="btn-primary" href="/about/">View case studies</a>
+                </div>
+            </div>
+
+<div class="row flex-column-reverse flex-sm-row flex-md-row footer">
+    <div class="col-lg-6 col-sm-12 footer-copyright">
+        <p>BPD © 2023</span></p>
     </div>
-    <div id="resume" class="main resume">
-      <section class="lead">
-        <h2>RESUME</h2>
-      </section>
-      <section class="education">
-        <h3>Education</h3>
-        <p>
-          <strong>Clemson</strong>
-          <span>2008-2010</span>
-          Computer Science (transferred)
-        </p>
-        <p>
-          <strong>College of Charleston</strong>
-          <span>2010-2011, 2012-2014</span>
-          Data Science, B.S.
-        </p>
-      </section>
-      <section class="employment-history">
-        <h3>Employment History</h3>
-        <p>
-          <a href=" https://www.tango.us" target="_blank"
-            ><strong>Tango</strong></a
-          >
-          <span>Jun 2021 - Dec 2021 (contract)</span>
-          <span>Software Engineer</span>
-          <em class="tech"
-            >Javascript, Typescript, React.js, Next.js, Apollo, GraphQL</em
-          >
-          <span class="desc"
-            >Frontend engineer at a seed stage startup. Contract role when company was soft launching and monetizing. Product of the Week on ProductHunt.</span
-          >
-        </p>
-        <p>
-          <a href=" https://www.letsdecorateapp.com" target="_blank"
-            ><strong>Self Employed (Let's Decorate)</strong></a
-          >
-          <span>Jun 2020 - Oct 2020</span>
-          <span>Freelance developer</span>
-          <em class="tech"
-            >Javascript, Typescript, React.js, Ionic, Serverless, Back4App,
-            Twilio, Google Cloud, AWS, project management</em
-          >
-          <span class="desc"
-            >Interior design consultation progressive web app built as a solo freelance project.</span
-          >
-        </p>
-        <p>
-          <a href=" https://www.bestow.com" target="_blank"
-            ><strong>Bestow</strong></a
-          >
-          <span>Feb 2020 - Jun 2020</span>
-          <span>Senior Software Engineer II / Technical Lead</span>
-          <em class="tech"
-            >JavaScript, React.js, Redux, Typescript, people management &
-            leadership</em
-          >
-          <span class="desc"
-            >Technical lead hired to course correct a mission critical frontend codebase
-            and poorly performing engineering team. Delivered a major product
-            initiative and introduced a complete repository rewrite RFC/ADR. Exited role due to insufficient leadership experience.</span
-          >
-        </p>
-        <p>
-          <a href=" https://www.zerocater.com" target="_blank"
-            ><strong>ZeroCater</strong></a
-          >
-          <span>Oct 2018 - Feb 2020</span>
-          <span
-            >Lead Frontend Software
-            Engineer</span
-          >
-          <em class="tech"
-            >JavaScript, React.js, Redux, Typescript, Next.js, Vue.js, Django,
-            Postgres, Docker, people management & leadership</em
-          >
-          <span class="desc"
-            >Frontend technical lead. Architected codebase and processes, cut tickets, and owned hiring processes. Built new products and features. Technically managed and mentored teammates.</span
-          >
-        </p>
-        <p class="pagebreak">
-          <a href=" https://www.spredfast.com" target="_blank"
-            ><strong
-              >Spredfast
-              <span style="font-weight: normal; display: inline"
-                >(acquired, now Khoros)</span
-              ></strong
-            ></a
-          >
-          <span>Jul 2018 - Sep 2018</span>
-          <span>Software Engineer</span>
-          <em class="tech"
-            >JavaScript, React.js, Redux, Redux Saga, Reselect,
-            styled-components</em
-          >
-          <span class="desc"
-            >Implemented frontend features for an enterprise social media analytics platform. Some users were Delta Airlines, The NFL, and National
-            Geographic. Transitioned out due to acquisition.</span
-          >
-        </p>
-        <p>
-          <a href="https://www.threatcare.com" target="_blank"
-            ><strong>Threatcare</strong></a
-          >
-          <span>Apr 2018 - Jul 2018</span>
-          <span>Lead Software Engineer</span>
-          <em class="tech"
-            >JavaScript, React.js, Flow, Typescript, Node.js, GraphQL, Apollo,
-            Postgres, Ruby on Rails, Docker, people management & leadership</em
-          >
-          <span class="desc"
-            >One of an engineering team of three in a nascent startup. Owned the
-            creation and implementation of frontend processes. Mentored and
-            managed a junior. Supported a legacy platform for digital security
-            assessment automation and drove a product redesign. Architected,
-            built, managed, and launched a policy generation product. Exited due to lack of funding.</span
-          >
-        </p>
-        <p>
-          <a href="https://www.cbancnetwork.com" target="_blank"
-            ><strong>CBANC Network</strong></a
-          >
-          <span>Aug 2016 - Apr 2018</span>
-          <span>Software Engineer / Lead Software Engineer</span>
-          <em class="tech"
-            >JavaScript, Mercury.js, React.js, Elm, Node.js, Express.js, Neo4j,
-            nginx, Docker</em
-          >
-          <span class="desc"
-            >Full stack software engineer supporting an ecosystem of
-            applications to connect and support small bank and community credit
-            union professionals. Drove growth hacking product decisions and
-            fully owned their design, implementation, and maintenance. Junior to
-            lead in 6 months.</span
-          >
-        </p>
-        <p>
-          <a href="https://www.intersysconsulting.com" target="_blank"
-            ><strong>Intersys Consulting</strong></a
-          >
-          <span>May 2016 - Aug 2016 (Contract)</span>
-          <span>Lead UI Developer</span>
-          <em class="tech">JavaScript, React.js</em>
-          <span class="desc"
-            >Architected a frontend for an enterprise TV ratings report
-            generator proof of concept.</span
-          >
-        </p>
-        <p>
-          <a href="https://www.obviouslee.com" target="_blank"
-            ><strong>Obviouslee Marketing</strong></a
-          >
-          <span>Sep 2014 - Apr 2016</span>
-          <span>Web Developer</span>
-          <em class="tech">WordPress, PHP, JavaScript, Squarespace, Shopify</em>
-          <span class="desc"
-            >Sole technical employee at a full service marketing agency. Owned
-            the web development department. Coordinated with clients to address
-            their web presence needs. Worked with designers to translate client
-            needs into design assets. Built web experiences for clients.
-            Transitioned to explore broader web technologies.</span
-          >
-        </p>
-        <p>
-          <a href="https://www.jobmarketmaker.com" target="_blank"
-            ><strong>Job Market Maker</strong></a
-          >
-          <span>May 2014 - Aug 2014</span>
-          <span>Data Scientist</span>
-          <em class="tech">.NET, SQL Server</em>
-          <span class="desc"
-            >Fourth hire. Built an SQL data model to support algorithmic
-            matching of job candidates with open positions. Created a web
-            application for data entry to populate a database for algorithm
-            testing.</span
-          >
-        </p>
-        <p>
-          <a href="http://manufactur.co" target="_blank"
-            ><strong>Manufactur</strong></a
-          >
-          <span>May 2012 - May 2014</span>
-          <span>Web Developer</span>
-          <em class="tech">WordPress, PHP, JavaScript, Magento</em>
-          <span class="desc"
-            >Worked with designers to create web experiences for food & beverage
-            and entertainment industry clients. Transitioned out to seek
-            opportunities in data science.</span
-          >
-        </p>
-        <a href="#contact" class="btn contact">get in touch</a>
-      </section>
+
+    <div class="col-lg-6 col-sm-12 footer-social">
+        <p><a href="mailto:brntpalmer@gmail.com">Email me</a> </p>
     </div>
-    <div id="contact" class="main contact">
-      <section class="lead">
-        <h2>CONTACT</h2>
-        <p>
-          <strong><a href="mailto:adam@adamz.hu">adam@adamz.hu</a></strong>
-          <span><a href="tel:18434529003">+1 (843) 452-9003</a></span>
-          Brooklyn, New York
-        </p>
-        <a href="#home" class="btn home">back to home</a>
-      </section>
+</div>        </div>
     </div>
-    <script>
-      'use strict';
+</div>
+</div>
 
-      // polyfill https://github.com/iamdustan/smoothscroll
-      function polyfill() {
-        // aliases
-        var w = window;
-        var d = document;
+</div>
 
-        // return if scroll behavior is supported and polyfill is not forced
-        if (
-          'scrollBehavior' in d.documentElement.style &&
-          w.__forceSmoothScrollPolyfill__ !== true
-        ) {
-          return;
-        }
+<!-- Global site tag (gtag.js) - Google Analytics -->
 
-        // globals
-        var Element = w.HTMLElement || w.Element;
-        var SCROLL_TIME = 468;
+<!-- MailChimp Code -->
 
-        // object gathering original scroll methods
-        var original = {
-          scroll: w.scroll || w.scrollTo,
-          scrollBy: w.scrollBy,
-          elementScroll: Element.prototype.scroll || scrollElement,
-          scrollIntoView: Element.prototype.scrollIntoView,
-        };
-
-        // define timing method
-        var now =
-          w.performance && w.performance.now
-            ? w.performance.now.bind(w.performance)
-            : Date.now;
-
-        /**
-         * indicates if a the current browser is made by Microsoft
-         * @method isMicrosoftBrowser
-         * @param {String} userAgent
-         * @returns {Boolean}
-         */
-        function isMicrosoftBrowser(userAgent) {
-          var userAgentPatterns = ['MSIE ', 'Trident/', 'Edge/'];
-
-          return new RegExp(userAgentPatterns.join('|')).test(userAgent);
-        }
-
-        /*
-         * IE has rounding bug rounding down clientHeight and clientWidth and
-         * rounding up scrollHeight and scrollWidth causing false positives
-         * on hasScrollableSpace
-         */
-        var ROUNDING_TOLERANCE = isMicrosoftBrowser(w.navigator.userAgent)
-          ? 1
-          : 0;
-
-        /**
-         * changes scroll position inside an element
-         * @method scrollElement
-         * @param {Number} x
-         * @param {Number} y
-         * @returns {undefined}
-         */
-        function scrollElement(x, y) {
-          this.scrollLeft = x;
-          this.scrollTop = y;
-        }
-
-        /**
-         * returns result of applying ease math function to a number
-         * @method ease
-         * @param {Number} k
-         * @returns {Number}
-         */
-        function ease(k) {
-          return 0.5 * (1 - Math.cos(Math.PI * k));
-        }
-
-        /**
-         * indicates if a smooth behavior should be applied
-         * @method shouldBailOut
-         * @param {Number|Object} firstArg
-         * @returns {Boolean}
-         */
-        function shouldBailOut(firstArg) {
-          if (
-            firstArg === null ||
-            typeof firstArg !== 'object' ||
-            firstArg.behavior === undefined ||
-            firstArg.behavior === 'auto' ||
-            firstArg.behavior === 'instant'
-          ) {
-            // first argument is not an object/null
-            // or behavior is auto, instant or undefined
-            return true;
-          }
-
-          if (typeof firstArg === 'object' && firstArg.behavior === 'smooth') {
-            // first argument is an object and behavior is smooth
-            return false;
-          }
-
-          // throw error when behavior is not supported
-          throw new TypeError(
-            'behavior member of ScrollOptions ' +
-              firstArg.behavior +
-              ' is not a valid value for enumeration ScrollBehavior.',
-          );
-        }
-
-        /**
-         * indicates if an element has scrollable space in the provided axis
-         * @method hasScrollableSpace
-         * @param {Node} el
-         * @param {String} axis
-         * @returns {Boolean}
-         */
-        function hasScrollableSpace(el, axis) {
-          if (axis === 'Y') {
-            return el.clientHeight + ROUNDING_TOLERANCE < el.scrollHeight;
-          }
-
-          if (axis === 'X') {
-            return el.clientWidth + ROUNDING_TOLERANCE < el.scrollWidth;
-          }
-        }
-
-        /**
-         * indicates if an element has a scrollable overflow property in the axis
-         * @method canOverflow
-         * @param {Node} el
-         * @param {String} axis
-         * @returns {Boolean}
-         */
-        function canOverflow(el, axis) {
-          var overflowValue = w.getComputedStyle(el, null)['overflow' + axis];
-
-          return overflowValue === 'auto' || overflowValue === 'scroll';
-        }
-
-        /**
-         * indicates if an element can be scrolled in either axis
-         * @method isScrollable
-         * @param {Node} el
-         * @param {String} axis
-         * @returns {Boolean}
-         */
-        function isScrollable(el) {
-          var isScrollableY =
-            hasScrollableSpace(el, 'Y') && canOverflow(el, 'Y');
-          var isScrollableX =
-            hasScrollableSpace(el, 'X') && canOverflow(el, 'X');
-
-          return isScrollableY || isScrollableX;
-        }
-
-        /**
-         * finds scrollable parent of an element
-         * @method findScrollableParent
-         * @param {Node} el
-         * @returns {Node} el
-         */
-        function findScrollableParent(el) {
-          var isBody;
-
-          do {
-            el = el.parentNode;
-
-            isBody = el === d.body;
-          } while (isBody === false && isScrollable(el) === false);
-
-          isBody = null;
-
-          return el;
-        }
-
-        /**
-         * self invoked function that, given a context, steps through scrolling
-         * @method step
-         * @param {Object} context
-         * @returns {undefined}
-         */
-        function step(context) {
-          var time = now();
-          var value;
-          var currentX;
-          var currentY;
-          var elapsed = (time - context.startTime) / SCROLL_TIME;
-
-          // avoid elapsed times higher than one
-          elapsed = elapsed > 1 ? 1 : elapsed;
-
-          // apply easing to elapsed time
-          value = ease(elapsed);
-
-          currentX = context.startX + (context.x - context.startX) * value;
-          currentY = context.startY + (context.y - context.startY) * value;
-
-          context.method.call(context.scrollable, currentX, currentY);
-
-          // scroll more if we have not reached our destination
-          if (currentX !== context.x || currentY !== context.y) {
-            w.requestAnimationFrame(step.bind(w, context));
-          }
-        }
-
-        /**
-         * scrolls window or element with a smooth behavior
-         * @method smoothScroll
-         * @param {Object|Node} el
-         * @param {Number} x
-         * @param {Number} y
-         * @returns {undefined}
-         */
-        function smoothScroll(el, x, y) {
-          var scrollable;
-          var startX;
-          var startY;
-          var method;
-          var startTime = now();
-
-          // define scroll context
-          if (el === d.body) {
-            scrollable = w;
-            startX = w.scrollX || w.pageXOffset;
-            startY = w.scrollY || w.pageYOffset;
-            method = original.scroll;
-          } else {
-            scrollable = el;
-            startX = el.scrollLeft;
-            startY = el.scrollTop;
-            method = scrollElement;
-          }
-
-          // scroll looping over a frame
-          step({
-            scrollable: scrollable,
-            method: method,
-            startTime: startTime,
-            startX: startX,
-            startY: startY,
-            x: x,
-            y: y,
-          });
-        }
-
-        // ORIGINAL METHODS OVERRIDES
-        // w.scroll and w.scrollTo
-        w.scroll = w.scrollTo = function () {
-          // avoid action when no arguments are passed
-          if (arguments[0] === undefined) {
-            return;
-          }
-
-          // avoid smooth behavior if not required
-          if (shouldBailOut(arguments[0]) === true) {
-            original.scroll.call(
-              w,
-              arguments[0].left !== undefined
-                ? arguments[0].left
-                : typeof arguments[0] !== 'object'
-                ? arguments[0]
-                : w.scrollX || w.pageXOffset,
-              // use top prop, second argument if present or fallback to scrollY
-              arguments[0].top !== undefined
-                ? arguments[0].top
-                : arguments[1] !== undefined
-                ? arguments[1]
-                : w.scrollY || w.pageYOffset,
-            );
-
-            return;
-          }
-
-          // LET THE SMOOTHNESS BEGIN!
-          smoothScroll.call(
-            w,
-            d.body,
-            arguments[0].left !== undefined
-              ? ~~arguments[0].left
-              : w.scrollX || w.pageXOffset,
-            arguments[0].top !== undefined
-              ? ~~arguments[0].top
-              : w.scrollY || w.pageYOffset,
-          );
-        };
-
-        // w.scrollBy
-        w.scrollBy = function () {
-          // avoid action when no arguments are passed
-          if (arguments[0] === undefined) {
-            return;
-          }
-
-          // avoid smooth behavior if not required
-          if (shouldBailOut(arguments[0])) {
-            original.scrollBy.call(
-              w,
-              arguments[0].left !== undefined
-                ? arguments[0].left
-                : typeof arguments[0] !== 'object'
-                ? arguments[0]
-                : 0,
-              arguments[0].top !== undefined
-                ? arguments[0].top
-                : arguments[1] !== undefined
-                ? arguments[1]
-                : 0,
-            );
-
-            return;
-          }
-
-          // LET THE SMOOTHNESS BEGIN!
-          smoothScroll.call(
-            w,
-            d.body,
-            ~~arguments[0].left + (w.scrollX || w.pageXOffset),
-            ~~arguments[0].top + (w.scrollY || w.pageYOffset),
-          );
-        };
-
-        // Element.prototype.scroll and Element.prototype.scrollTo
-        Element.prototype.scroll = Element.prototype.scrollTo = function () {
-          // avoid action when no arguments are passed
-          if (arguments[0] === undefined) {
-            return;
-          }
-
-          // avoid smooth behavior if not required
-          if (shouldBailOut(arguments[0]) === true) {
-            // if one number is passed, throw error to match Firefox implementation
-            if (
-              typeof arguments[0] === 'number' &&
-              arguments[1] === undefined
-            ) {
-              throw new SyntaxError('Value could not be converted');
-            }
-
-            original.elementScroll.call(
-              this,
-              // use left prop, first number argument or fallback to scrollLeft
-              arguments[0].left !== undefined
-                ? ~~arguments[0].left
-                : typeof arguments[0] !== 'object'
-                ? ~~arguments[0]
-                : this.scrollLeft,
-              // use top prop, second argument or fallback to scrollTop
-              arguments[0].top !== undefined
-                ? ~~arguments[0].top
-                : arguments[1] !== undefined
-                ? ~~arguments[1]
-                : this.scrollTop,
-            );
-
-            return;
-          }
-
-          var left = arguments[0].left;
-          var top = arguments[0].top;
-
-          // LET THE SMOOTHNESS BEGIN!
-          smoothScroll.call(
-            this,
-            this,
-            typeof left === 'undefined' ? this.scrollLeft : ~~left,
-            typeof top === 'undefined' ? this.scrollTop : ~~top,
-          );
-        };
-
-        // Element.prototype.scrollBy
-        Element.prototype.scrollBy = function () {
-          // avoid action when no arguments are passed
-          if (arguments[0] === undefined) {
-            return;
-          }
-
-          // avoid smooth behavior if not required
-          if (shouldBailOut(arguments[0]) === true) {
-            original.elementScroll.call(
-              this,
-              arguments[0].left !== undefined
-                ? ~~arguments[0].left + this.scrollLeft
-                : ~~arguments[0] + this.scrollLeft,
-              arguments[0].top !== undefined
-                ? ~~arguments[0].top + this.scrollTop
-                : ~~arguments[1] + this.scrollTop,
-            );
-
-            return;
-          }
-
-          this.scroll({
-            left: ~~arguments[0].left + this.scrollLeft,
-            top: ~~arguments[0].top + this.scrollTop,
-            behavior: arguments[0].behavior,
-          });
-        };
-
-        // Element.prototype.scrollIntoView
-        Element.prototype.scrollIntoView = function () {
-          // avoid smooth behavior if not required
-          if (shouldBailOut(arguments[0]) === true) {
-            original.scrollIntoView.call(
-              this,
-              arguments[0] === undefined ? true : arguments[0],
-            );
-
-            return;
-          }
-
-          // LET THE SMOOTHNESS BEGIN!
-          var scrollableParent = findScrollableParent(this);
-          var parentRects = scrollableParent.getBoundingClientRect();
-          var clientRects = this.getBoundingClientRect();
-
-          if (scrollableParent !== d.body) {
-            // reveal element inside parent
-            smoothScroll.call(
-              this,
-              scrollableParent,
-              scrollableParent.scrollLeft + clientRects.left - parentRects.left,
-              scrollableParent.scrollTop + clientRects.top - parentRects.top,
-            );
-
-            // reveal parent in viewport unless is fixed
-            if (w.getComputedStyle(scrollableParent).position !== 'fixed') {
-              w.scrollBy({
-                left: parentRects.left,
-                top: parentRects.top,
-                behavior: 'smooth',
-              });
-            }
-          } else {
-            // reveal element in viewport
-            w.scrollBy({
-              left: clientRects.left,
-              top: clientRects.top,
-              behavior: 'smooth',
-            });
-          }
-        };
-      }
-
-      polyfill();
-
-      const throttle = (fn, incr) => {
-        let timestamp = undefined;
-
-        return (args) => {
-          if (timestamp === undefined) {
-            timestamp = new Date();
-
-            return fn(args);
-          }
-
-          if (new Date() - timestamp >= incr) {
-            timestamp = undefined;
-
-            return fn(args);
-          }
-
-          return;
-        };
-      };
-
-      (function () {
-        var el_nav;
-        var menu_items;
-        var sections;
-
-        function set_body_class(className) {
-          document.body.className = className;
-        }
-
-        function add_active_class(nodeList) {
-          Array.prototype.forEach.call(nodeList, function (el) {
-            el.classList.add('active');
-          });
-        }
-
-        function remove_active_class(nodeList) {
-          Array.prototype.forEach.call(nodeList, function (el) {
-            el.classList.remove('active');
-          });
-        }
-
-        function set_menu_item_active(item_name) {
-          Object.keys(menu_items).forEach(function (k) {
-            k === item_name
-              ? add_active_class(menu_items[k])
-              : remove_active_class(menu_items[k]);
-          });
-        }
-
-        function is_active_section(el) {
-          const bounding = el.getBoundingClientRect();
-
-          return (
-            bounding.top + bounding.height >=
-            (window.innerHeight || document.documentElement.clientHeight) / 2
-          );
-        }
-
-        function handle_scroll() {
-          if (window.scrollTop === 0) {
-            (el_nav || document.querySelector('nav')).classList.add('unfixed');
-          } else {
-            (el_nav || document.querySelector('nav')).classList.remove(
-              'unfixed',
-            );
-          }
-
-          return Object.keys(sections || {}).some((section_key) => {
-            const is_active = is_active_section(
-              sections[section_key] ||
-                document.querySelector(`.main.${section_key}`),
-            );
-
-            if (is_active) {
-              set_menu_item_active(section_key);
-              set_body_class(section_key);
-            }
-
-            return is_active;
-          });
-        }
-
-        window.addEventListener('load', function () {
-          el_nav = document.querySelector('nav');
-          menu_items = {
-            home: document.querySelectorAll('nav .home, .btn.home'),
-            about: document.querySelectorAll('nav .about, .btn.about'),
-            resume: document.querySelectorAll('nav .resume, .btn.resume'),
-            contact: document.querySelectorAll('nav .contact, .btn.contact'),
-          };
-          sections = {
-            home: document.querySelector('.main.home'),
-            about: document.querySelector('.main.about'),
-            resume: document.querySelector('.main.resume'),
-            contact: document.querySelector('.main.contact'),
-          };
-
-          Object.keys(menu_items).forEach(function (item_name) {
-            Array.prototype.forEach.call(menu_items[item_name], function (el) {
-              el.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                sections[item_name].scrollIntoView({ behavior: 'smooth' });
-                set_menu_item_active(item_name);
-              });
-            });
-          });
-
-          $('.button-collapse').sideNav({ closeOnClick: true });
-
-          handle_scroll();
-        });
-
-        window.addEventListener('scroll', throttle(handle_scroll, 100));
-      })();
-    </script>
-  </body>
+</body>
 </html>
